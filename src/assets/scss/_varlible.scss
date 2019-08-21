@@ -1,0 +1,28 @@
+/*颜色组*/
+$c-33:#333333;
+$c-66:#666666;
+$c-99:#999999;
+$orange:#f07721;
+$border:#e4e4e4;
+$borA:#aaaaaa;
+$c-ff:#ffffff;
+$uce-main:#541b86;
+$uce-purple:#5b198b;
+$uce-orange:#f07b09;
+$c-red:#ff0000;
+$bor-bb:#bbbbbb;
+
+
+
+/*rem px转换*/
+$fontsize:18.75;
+$blue:#363765;
+
+@function torem($px) {
+  @return ($px/$fontsize)+rem;
+}
+@mixin padding($top,$right,$bottom,$left) {
+  padding:($top/$fontsize)+rem ($right/$fontsize)+rem ($bottom/$fontsize)+rem ($left/$fontsize)+rem;
+}
+/*  @include padding(30,20,10,10);
+*/
